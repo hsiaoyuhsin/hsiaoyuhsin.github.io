@@ -1,12 +1,16 @@
 $grayColor: #444444;
 $lightGrayColor: #D6D5D5;
+$whiteColor: #ffffff;
 $blackColor: #000000;
-$lgFontSize: 2.8vw;
-$mediumFontSize:1.6vw;
-$smallFontSize:1.3vw;
-$xsFontSize:1vw;
+$mainColor: $grayColor;
+$lgFontSize: 2rem;
+$mediumFontSize:1.3rem;
+$smallFontSize:1rem;
+$xsFontSize:.8rem;
 $cardWidth: 300px;
 $cardHeight: 250px;
+
+    
 
 *{
     color:$grayColor;
@@ -23,8 +27,8 @@ $cardHeight: 250px;
     background-color:#fff;
     li{
         position:relative;
-        top:50%;
-        transform: translateY(-20%);
+        top:60%;
+        transform: translateY(-40%);
 
         a{
             color: $grayColor;
@@ -41,11 +45,10 @@ $cardHeight: 250px;
     }
 }
 .secNav{
-    position:relative;
     font-size: $xsFontSize;
-    top:13vh;
+    padding-top:12vh;
     li{
-        padding:1.2%;
+        padding:3%;
     }
     li:hover{
         cursor: pointer;
@@ -69,7 +72,8 @@ $cardHeight: 250px;
         position: relative;
         top:20%;
         left:10%;
-        width:30%;
+        width:80%;
+        font-weight: 300;
         font-size: $lgFontSize;
         .jpVersion {
             padding-left: 30px;
@@ -85,7 +89,8 @@ $cardHeight: 250px;
         left:13%;
         line-height: 5vh;
         font-size: $mediumFontSize;
-        width:30%;
+        color: $mainColor;
+        width:80%;
         .enVersion{
             position: relative;
             top: 1.5vh;
@@ -94,7 +99,32 @@ $cardHeight: 250px;
             position: relative;
             font-size: $xsFontSize;
             top: 1.5vh;
-            color: $grayColor;
+            color: $mainColor;
         }
+    }
+}
+
+/*========= Mobile First Method ==========*/
+@media (max-width : 767px) {
+    *{
+        letter-spacing: 1px;
+    }
+    #homeBanner{
+        h1{
+            .jpVersion{
+                font-size: $smallFontSize;
+            }
+        }
+        h2{
+            span{
+                color:white;
+                font-weight:400;
+            }
+        }
+    }
+}
+@media only screen and (min-width : 376px) and (max-width : 767px) {
+    h2 a{
+        color:$whiteColor;
     }
 }

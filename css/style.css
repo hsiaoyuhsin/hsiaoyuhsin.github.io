@@ -14,12 +14,12 @@
 }
 .mainNav li {
   position: relative;
-  top: 50%;
-  transform: translateY(-20%);
+  top: 60%;
+  transform: translateY(-40%);
 }
 .mainNav li a {
   color: #444444;
-  font-size: 1.3vw;
+  font-size: 1rem;
   margin: 1vw;
   margin-top: 0;
 }
@@ -31,12 +31,11 @@
 }
 
 .secNav {
-  position: relative;
-  font-size: 1vw;
-  top: 13vh;
+  font-size: 0.8rem;
+  padding-top: 12vh;
 }
 .secNav li {
-  padding: 1.2%;
+  padding: 3%;
 }
 .secNav li:hover {
   cursor: pointer;
@@ -59,23 +58,25 @@
   position: relative;
   top: 20%;
   left: 10%;
-  width: 30%;
-  font-size: 2.8vw;
+  width: 80%;
+  font-weight: 300;
+  font-size: 2rem;
 }
 #homeBanner h1 .jpVersion {
   padding-left: 30px;
-  font-size: 1.6vw;
+  font-size: 1.3rem;
 }
 #homeBanner h1 .enVersion {
-  font-size: 1.6vw;
+  font-size: 1.3rem;
 }
 #homeBanner h2 {
   position: relative;
   top: 32%;
   left: 13%;
   line-height: 5vh;
-  font-size: 1.6vw;
-  width: 30%;
+  font-size: 1.3rem;
+  color: #444444;
+  width: 80%;
 }
 #homeBanner h2 .enVersion {
   position: relative;
@@ -83,9 +84,29 @@
 }
 #homeBanner h2 a {
   position: relative;
-  font-size: 1vw;
+  font-size: 0.8rem;
   top: 1.5vh;
   color: #444444;
+}
+
+/*========= Mobile First Method ==========*/
+@media (max-width: 767px) {
+  * {
+    letter-spacing: 1px;
+  }
+
+  #homeBanner h1 .jpVersion {
+    font-size: 1rem;
+  }
+  #homeBanner h2 span {
+    color: white;
+    font-weight: 400;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+  h2 a {
+    color: #ffffff;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
