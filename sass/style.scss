@@ -3,8 +3,8 @@ $lightGrayColor: #D6D5D5;
 $whiteColor: #ffffff;
 $blackColor: #000000;
 $mainColor: $grayColor;
-$lgFontSize: 2rem;
-$mediumFontSize:1.3rem;
+$lgFontSize: 2.3rem;
+$mediumFontSize:1.5rem;
 $smallFontSize:1rem;
 $xsFontSize:.8rem;
 $cardWidth: 300px;
@@ -19,6 +19,10 @@ $cardHeight: 250px;
     font-weight: 300;
     letter-spacing: 2px;
     // border: 1px solid #000000;
+}
+
+#nav {
+    z-index: 9999;
 }
 
 .mainNav{
@@ -45,7 +49,7 @@ $cardHeight: 250px;
     }
 }
 .secNav{
-    font-size: $xsFontSize;
+    font-size: $smallFontSize;
     padding-top:12vh;
     li{
         padding:3%;
@@ -67,7 +71,6 @@ $cardHeight: 250px;
     background-size: cover;
     height: 100vh;
     width: 100％;
-    
     h1{
         position: relative;
         top:20%;
@@ -87,7 +90,7 @@ $cardHeight: 250px;
         position: relative;
         top:32%;
         left:13%;
-        line-height: 5vh;
+        line-height: 3vw;
         font-size: $mediumFontSize;
         color: $mainColor;
         width:80%;
@@ -111,20 +114,58 @@ $cardHeight: 250px;
     }
     #homeBanner{
         h1{
-            .jpVersion{
+            font-size: $mediumFontSize;
+            .jpVersion, .enVersion{
                 font-size: $smallFontSize;
             }
         }
         h2{
+            line-height: 8vh;
+            top:60%;
             span{
-                color:white;
+                font-size: $smallFontSize;
+                color:$whiteColor;
                 font-weight:400;
+            }
+            a{
+                color: $whiteColor;
             }
         }
     }
 }
-@media only screen and (min-width : 376px) and (max-width : 767px) {
-    h2 a{
-        color:$whiteColor;
+@media (max-width : 1200px) {
+    #homeBanner{
+        h2{
+            line-height: 5vw;
+        }
+    }
+}
+@media (max-height: 380px) and (max-width : 900px){
+    #homeBanner{
+        h1{
+            top:23%;
+            font-size: $mediumFontSize;
+            .jpVersion, .enVersion{
+                font-size: $smallFontSize;
+            }
+        }
+        h2{
+            line-height: 6vh;
+            top:30%;
+            span{
+                font-size: $smallFontSize;
+                color: $mainColor;
+                font-weight:300;
+            }
+        }
+    }
+    .mainNav{
+        height:15vh;
+        li{
+            transform: translateY(-50%);
+            a{
+                font-size: $xsFontSize;
+            }
+        }
     }
 }
