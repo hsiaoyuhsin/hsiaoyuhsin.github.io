@@ -105,6 +105,9 @@
   #homeBanner h1 .jpVersion, #homeBanner h1 .enVersion {
     font-size: 1rem;
   }
+  #homeBanner h1 .jpVersion {
+    padding-left: 10px;
+  }
   #homeBanner h2 {
     line-height: 8vh;
     top: 60%;
@@ -139,6 +142,9 @@
     font-size: 1rem;
     color: #444444;
     font-weight: 300;
+  }
+  #homeBanner h2 a {
+    color: #444444;
   }
 
   .mainNav {

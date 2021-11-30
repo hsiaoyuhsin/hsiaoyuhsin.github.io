@@ -118,6 +118,9 @@ $cardHeight: 250px;
             .jpVersion, .enVersion{
                 font-size: $smallFontSize;
             }
+            .jpVersion {
+                padding-left: 10px;
+            }
         }
         h2{
             line-height: 8vh;
@@ -156,6 +159,9 @@ $cardHeight: 250px;
                 font-size: $smallFontSize;
                 color: $mainColor;
                 font-weight:300;
+            }
+            a{
+                color: $mainColor;
             }
         }
     }
