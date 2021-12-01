@@ -2,13 +2,16 @@ $grayColor: #444444;
 $lightGrayColor: #D6D5D5;
 $whiteColor: #ffffff;
 $blackColor: #000000;
+$bg_color: blueviolet;
 $mainColor: $grayColor;
 $lgFontSize: 2.3rem;
 $mediumFontSize:1.5rem;
 $smallFontSize:1rem;
 $xsFontSize:.8rem;
-$cardWidth: 300px;
-$cardHeight: 250px;
+$cardWidthLg: 500px;
+$cardHeightLg: 400px;
+$cardWidthSm: 350px;
+$cardHeightSm: 300px;
 
     
 
@@ -106,6 +109,87 @@ $cardHeight: 250px;
         }
     }
 }
+#homeCards {
+    margin-top:5vh;
+    a{
+        margin-bottom:5vh;
+    }
+    a:hover{
+        cursor: pointer;
+    }
+    a:link{
+        text-decoration: none;
+    }
+    .card{
+        width: $cardWidthLg;
+        height: $cardHeightLg;
+        overflow: hidden;
+        position: relative;
+        border-radius:0;
+        border: none;
+        .card-img{
+            overflow: hidden;
+            height: 100%;
+            .card-img-pic{
+                width: 100%;
+                position: relative;
+                top: -10%
+            }
+        }
+    
+        .card-name{
+            padding: 2%;
+            padding-top:3%;
+            h2{
+                font-size: $smallFontSize;
+                font-weight: 300;
+            }
+        }
+    
+    }
+    .moreWorks{
+        width:100%;
+    }
+}
+
+#aboutBanner{
+    padding-top:15vh;
+    h1{
+        font-size: $lgFontSize;
+        font-weight: 300;
+        margin-bottom:2vh;
+        // .contact{
+        //     margin-top:4vh;
+        //     font-size:$smallFontSize;
+        // }
+    }
+    .jpVersion, .enVersion, h2{
+        font-size: $mediumFontSize;
+    }
+
+    h2{
+        line-height:4vh;
+    }
+}
+
+.aboutCV{
+    .cvBox{
+        h3{
+            border-left:10px solid $grayColor;
+            padding-left: 1vw;
+            font-size: $mediumFontSize;
+            font-weight: 300;
+        }
+        p{
+            padding-left: 1.5vw;
+            font-size: $smallFontSize;
+        }
+    }
+}
+
+footer{
+    margin-top:5vh;
+}
 
 /*========= Mobile First Method ==========*/
 @media (max-width : 767px) {
@@ -133,6 +217,20 @@ $cardHeight: 250px;
             a{
                 color: $whiteColor;
             }
+        }
+    }
+    #homeCards{
+        .card{
+            width: $cardWidthSm;
+            height: $cardHeightSm;
+        }
+    }
+    #aboutBanner{
+        h1{
+            font-size: $mediumFontSize;
+        }
+        .jpVersion, .enVersion, h2{
+            font-size: $smallFontSize;
         }
     }
 }
@@ -172,6 +270,17 @@ $cardHeight: 250px;
             a{
                 font-size: $xsFontSize;
             }
+        }
+    }
+    #aboutBanner{
+        h1{
+            font-size: $mediumFontSize;
+        }
+        .jpVersion, .enVersion, h2{
+            font-size: $smallFontSize;
+        }
+        h2{
+            line-height:8vh;
         }
     }
 }
