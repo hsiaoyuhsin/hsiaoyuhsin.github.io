@@ -93,6 +93,77 @@
   color: #444444;
 }
 
+#homeCards {
+  margin-top: 5vh;
+}
+#homeCards a {
+  margin-bottom: 5vh;
+}
+#homeCards a:hover {
+  cursor: pointer;
+}
+#homeCards a:link {
+  text-decoration: none;
+}
+#homeCards .card {
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0;
+  border: none;
+}
+#homeCards .card .card-img {
+  overflow: hidden;
+  height: 100%;
+}
+#homeCards .card .card-img .card-img-pic {
+  width: 100%;
+  position: relative;
+  top: -10%;
+}
+#homeCards .card .card-name {
+  padding: 2%;
+  padding-top: 3%;
+}
+#homeCards .card .card-name h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+#homeCards .moreWorks {
+  width: 100%;
+}
+
+#aboutBanner {
+  padding-top: 15vh;
+}
+#aboutBanner h1 {
+  font-size: 2.3rem;
+  font-weight: 300;
+  margin-bottom: 2vh;
+}
+#aboutBanner .jpVersion, #aboutBanner .enVersion, #aboutBanner h2 {
+  font-size: 1.5rem;
+}
+#aboutBanner h2 {
+  line-height: 4vh;
+}
+
+.aboutCV .cvBox h3 {
+  border-left: 10px solid #444444;
+  padding-left: 1vw;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.aboutCV .cvBox p {
+  padding-left: 1.5vw;
+  font-size: 1rem;
+}
+
+footer {
+  margin-top: 5vh;
+}
+
 /*========= Mobile First Method ==========*/
 @media (max-width: 767px) {
   * {
@@ -119,6 +190,18 @@
   }
   #homeBanner h2 a {
     color: #ffffff;
+  }
+
+  #homeCards .card {
+    width: 350px;
+    height: 300px;
+  }
+
+  #aboutBanner h1 {
+    font-size: 1.5rem;
+  }
+  #aboutBanner .jpVersion, #aboutBanner .enVersion, #aboutBanner h2 {
+    font-size: 1rem;
   }
 }
 @media (max-width: 1200px) {
@@ -155,6 +238,16 @@
   }
   .mainNav li a {
     font-size: 0.8rem;
+  }
+
+  #aboutBanner h1 {
+    font-size: 1.5rem;
+  }
+  #aboutBanner .jpVersion, #aboutBanner .enVersion, #aboutBanner h2 {
+    font-size: 1rem;
+  }
+  #aboutBanner h2 {
+    line-height: 8vh;
   }
 }
 
