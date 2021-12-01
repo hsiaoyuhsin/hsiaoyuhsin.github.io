@@ -67,7 +67,7 @@ $cardHeightSm: 300px;
 }
 
 #homeBanner{
-    background-image: url('../images/home_banner.png');
+    background-image: url('../images/home_banner.jpg');
     background-repeat: no-repeat;
     background-position: center 5vh;
     overflow-x: hidden;
@@ -154,6 +154,7 @@ $cardHeightSm: 300px;
 
 #aboutBanner{
     padding-top:15vh;
+    margin-bottom:5vh;
     h1{
         font-size: $lgFontSize;
         font-weight: 300;
@@ -174,15 +175,17 @@ $cardHeightSm: 300px;
 
 .aboutCV{
     .cvBox{
+        margin-bottom: 3vh;
         h3{
             border-left:10px solid $grayColor;
-            padding-left: 1vw;
+            padding-left: 1.5vw;
             font-size: $mediumFontSize;
-            font-weight: 300;
+            font-weight: 400;
         }
         p{
             padding-left: 1.5vw;
             font-size: $smallFontSize;
+            line-height:3vh;
         }
     }
 }
@@ -230,7 +233,21 @@ footer{
             font-size: $mediumFontSize;
         }
         .jpVersion, .enVersion, h2{
-            font-size: $smallFontSize;
+            font-size: $xsFontSize;
+        }
+    }
+    .aboutCV{
+        .cvBox{
+            h3{
+                border-left:8px solid $grayColor;
+                padding-left: 2vw;
+                font-size: $smallFontSize;
+            }
+            p{
+                padding-left: 4vw;
+                font-size: $xsFontSize;
+                line-height:3vh;
+            }
         }
     }
 }
