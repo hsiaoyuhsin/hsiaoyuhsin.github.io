@@ -6,9 +6,17 @@
   font-weight: 300;
   letter-spacing: 2px;
 }
+* h1 {
+  font-weight: 300;
+}
 
 #nav {
   z-index: 9999;
+}
+
+.contents {
+  width: 100%;
+  padding-top: 12vh;
 }
 
 .mainNav {
@@ -96,9 +104,6 @@
 #homeCards {
   margin-top: 5vh;
 }
-#homeCards a {
-  margin-bottom: 5vh;
-}
 #homeCards a:hover {
   cursor: pointer;
 }
@@ -107,20 +112,19 @@
 }
 #homeCards .card {
   width: 500px;
-  height: 400px;
   overflow: hidden;
   position: relative;
   border-radius: 0;
   border: none;
+  margin-bottom: 5vh;
 }
 #homeCards .card .card-img {
   overflow: hidden;
-  height: 100%;
+  border-radius: 0;
 }
 #homeCards .card .card-img .card-img-pic {
   width: 100%;
   position: relative;
-  top: -10%;
 }
 #homeCards .card .card-name {
   padding: 2%;
@@ -198,8 +202,7 @@ footer {
   }
 
   #homeCards .card {
-    width: 350px;
-    height: 300px;
+    width: 300px;
   }
 
   #aboutBanner h1 {
