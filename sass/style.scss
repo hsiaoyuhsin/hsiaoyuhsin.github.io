@@ -8,6 +8,7 @@ $lgFontSize: 2.3rem;
 $mediumFontSize:1.5rem;
 $smallFontSize:1rem;
 $xsFontSize:.8rem;
+$xxsFontSize:.7rem;
 $cardWidthLg: 380px;
 $cardHeightLg: 300px;
 $cardWidthSm: 300px;
@@ -204,7 +205,7 @@ $cardHeightSm: 300px;
     }
 }
 .workContent{
-    p{
+    .guide{
         font-size: $xsFontSize;
         a:link{
             text-decoration: none;
@@ -213,7 +214,10 @@ $cardHeightSm: 300px;
     .projectTitle{
         .workDetail1{
             padding-top:2%;
-            line-height:2vh;
+            line-height:1vh;
+        }
+        p, h2{
+            font-size: $smallFontSize;
         }
     }
     .workImg{
@@ -222,13 +226,13 @@ $cardHeightSm: 300px;
         }
         .workOtherImgs{
             div{
-                padding-top:2%;
+                padding-top:.8%;
             }
             div:nth-child(1){
-                padding-right: 1%;
+                padding-right: .4%;
             }
             div:nth-child(2){
-                padding-left: 1%;
+                padding-left: .4%;
             }
         }
     }
@@ -310,7 +314,16 @@ footer{
         }
     }
     .workContent{
+        .guide{
+            font-size: $xxsFontSize;
+        }
         .projectTitle{
+            h2{
+                font-size: $xsFontSize;
+            }
+            p{
+                font-size: $xxsFontSize;
+            }
             .workTitle{
                 h1{
                     font-size: $mediumFontSize;
@@ -319,31 +332,11 @@ footer{
                     font-size: $xsFontSize;
                 }
             }
-            .workDetail1{
-                line-height:1vh;
-                font-size: $xsFontSize;
-            }
-        }
-        .workImg{
-            img{
-                width: 100%;
-            }
-            .workOtherImgs{
-                div{
-                    padding-top:2%;
-                }
-                div:nth-child(1){
-                    padding-right: 1%;
-                }
-                div:nth-child(2){
-                    padding-left: 1%;
-                }
-            }
         }
         .workDetail2{
-            padding-top:3%;
+            padding-top:5%;
             line-height:1vh;
-            font-size: $xsFontSize;
+            font-size: $xxsFontSize;
         }
     }
 }
