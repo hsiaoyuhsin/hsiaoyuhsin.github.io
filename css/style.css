@@ -63,6 +63,7 @@
   background-position: center 5vh;
   overflow-x: hidden;
   background-size: cover;
+  color: #ffffff;
   height: 100vh;
   width: 100％;
 }
@@ -73,12 +74,15 @@
   width: 80%;
   font-weight: 300;
   font-size: 2.3rem;
+  color: #ffffff;
 }
 #homeBanner h1 .jpVersion {
-  padding-left: 30px;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 #homeBanner h1 .enVersion {
+  color: #ffffff;
+  padding-left: 30px;
   font-size: 1.5rem;
 }
 #homeBanner h2 {
@@ -87,8 +91,11 @@
   left: 13%;
   line-height: 3vw;
   font-size: 1.5rem;
-  color: #444444;
+  color: #ffffff;
   width: 80%;
+}
+#homeBanner h2 span {
+  color: #ffffff;
 }
 #homeBanner h2 .enVersion {
   position: relative;
@@ -98,7 +105,7 @@
   position: relative;
   font-size: 0.8rem;
   top: 1.5vh;
-  color: #444444;
+  color: #ffffff;
 }
 
 #homeCards {
@@ -160,7 +167,7 @@
 .aboutCV .cvBox h3 {
   border-left: 10px solid #444444;
   padding-left: 1.5vw;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .aboutCV .cvBox p {
@@ -169,8 +176,39 @@
   line-height: 3vh;
 }
 
+.workContent p {
+  font-size: 0.8rem;
+}
+.workContent p a:link {
+  text-decoration: none;
+}
+.workContent .projectTitle .workDetail1 {
+  padding-top: 2%;
+  line-height: 2vh;
+}
+.workContent .workImg img {
+  width: 100%;
+}
+.workContent .workImg .workOtherImgs div {
+  padding-top: 2%;
+}
+.workContent .workImg .workOtherImgs div:nth-child(1) {
+  padding-right: 1%;
+}
+.workContent .workImg .workOtherImgs div:nth-child(2) {
+  padding-left: 1%;
+}
+.workContent .workDetail2 {
+  padding-top: 3%;
+  line-height: 1vh;
+  font-size: 1rem;
+}
+
 footer {
   margin-top: 5vh;
+}
+footer p {
+  font-size: 0.8rem;
 }
 
 /*========= Mobile First Method ==========*/
@@ -179,18 +217,21 @@ footer {
     letter-spacing: 1px;
   }
 
+  #homeBanner {
+    background-image: url("../images/home_banner_2.jpg");
+  }
   #homeBanner h1 {
     font-size: 1.5rem;
   }
   #homeBanner h1 .jpVersion, #homeBanner h1 .enVersion {
     font-size: 1rem;
   }
-  #homeBanner h1 .jpVersion {
+  #homeBanner h1 .enVersion {
     padding-left: 10px;
   }
   #homeBanner h2 {
     line-height: 8vh;
-    top: 60%;
+    top: 64%;
   }
   #homeBanner h2 span {
     font-size: 1rem;
@@ -203,6 +244,9 @@ footer {
 
   #homeCards .card {
     width: 300px;
+  }
+  #homeCards .card .card-name h2 {
+    font-size: 0.8rem;
   }
 
   #aboutBanner h1 {
@@ -222,9 +266,41 @@ footer {
     font-size: 0.8rem;
     line-height: 3vh;
   }
+
+  .workContent .projectTitle .workTitle h1 {
+    font-size: 1.5rem;
+  }
+  .workContent .projectTitle .workTitle p {
+    font-size: 0.8rem;
+  }
+  .workContent .projectTitle .workDetail1 {
+    line-height: 1vh;
+    font-size: 0.8rem;
+  }
+  .workContent .workImg img {
+    width: 100%;
+  }
+  .workContent .workImg .workOtherImgs div {
+    padding-top: 2%;
+  }
+  .workContent .workImg .workOtherImgs div:nth-child(1) {
+    padding-right: 1%;
+  }
+  .workContent .workImg .workOtherImgs div:nth-child(2) {
+    padding-left: 1%;
+  }
+  .workContent .workDetail2 {
+    padding-top: 3%;
+    line-height: 1vh;
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 1200px) {
+  #homeBanner {
+    background-image: url("../images/home_banner_2.jpg");
+  }
   #homeBanner h2 {
+    top: 64%;
     line-height: 5vw;
   }
 }
