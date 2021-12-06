@@ -9,7 +9,7 @@ $mediumFontSize:1.5rem;
 $smallFontSize:1rem;
 $xsFontSize:.8rem;
 $cardWidthLg: 380px;
-$cardHeightLg: 400px;
+$cardHeightLg: 300px;
 $cardWidthSm: 300px;
 $cardHeightSm: 300px;
 
@@ -80,6 +80,7 @@ $cardHeightSm: 300px;
     background-position: center 5vh;
     overflow-x: hidden;
     background-size: cover;
+    color: $whiteColor;
     height: 100vh;
     width: 100％;
     h1{
@@ -89,11 +90,14 @@ $cardHeightSm: 300px;
         width:80%;
         font-weight: 300;
         font-size: $lgFontSize;
+        color: $whiteColor;
         .jpVersion {
-            padding-left: 30px;
+            color: $whiteColor;
             font-size: $mediumFontSize;
         }
         .enVersion{
+            color: $whiteColor;
+            padding-left: 30px;
             font-size: $mediumFontSize;
         }
     }
@@ -103,8 +107,11 @@ $cardHeightSm: 300px;
         left:13%;
         line-height: 3vw;
         font-size: $mediumFontSize;
-        color: $mainColor;
+        color: $whiteColor;
         width:80%;
+        span{
+            color: $whiteColor;
+        }
         .enVersion{
             position: relative;
             top: 1.5vh;
@@ -113,7 +120,7 @@ $cardHeightSm: 300px;
             position: relative;
             font-size: $xsFontSize;
             top: 1.5vh;
-            color: $mainColor;
+            color: $whiteColor;
         }
     }
 }
@@ -186,7 +193,7 @@ $cardHeightSm: 300px;
         h3{
             border-left:10px solid $grayColor;
             padding-left: 1.5vw;
-            font-size: $mediumFontSize;
+            font-size: $smallFontSize;
             font-weight: 400;
         }
         p{
@@ -196,9 +203,48 @@ $cardHeightSm: 300px;
         }
     }
 }
+.workContent{
+    p{
+        font-size: $xsFontSize;
+        a:link{
+            text-decoration: none;
+        }
+    }
+    .projectTitle{
+        .workDetail1{
+            padding-top:2%;
+            line-height:2vh;
+        }
+    }
+    .workImg{
+        img{
+            width: 100%;
+        }
+        .workOtherImgs{
+            div{
+                padding-top:2%;
+            }
+            div:nth-child(1){
+                padding-right: 1%;
+            }
+            div:nth-child(2){
+                padding-left: 1%;
+            }
+        }
+    }
+    .workDetail2{
+        padding-top:3%;
+        line-height:1vh;
+        font-size: $smallFontSize;
+    }
+}
+
 
 footer{
     margin-top:5vh;
+    p{
+        font-size: $xsFontSize;
+    }
 }
 
 /*========= Mobile First Method ==========*/
@@ -207,18 +253,19 @@ footer{
         letter-spacing: 1px;
     }
     #homeBanner{
+        background-image: url('../images/home_banner_2.jpg');
         h1{
             font-size: $mediumFontSize;
             .jpVersion, .enVersion{
                 font-size: $smallFontSize;
             }
-            .jpVersion {
+            .enVersion {
                 padding-left: 10px;
             }
         }
         h2{
             line-height: 8vh;
-            top:60%;
+            top:64%;
             span{
                 font-size: $smallFontSize;
                 color:$whiteColor;
@@ -233,6 +280,11 @@ footer{
         .card{
             width: $cardWidthSm;
             // height: $cardHeightSm;
+            .card-name{
+                h2{
+                 font-size: $xsFontSize;
+                }
+            }
         }
     }
     #aboutBanner{
@@ -257,10 +309,49 @@ footer{
             }
         }
     }
+    .workContent{
+        .projectTitle{
+            .workTitle{
+                h1{
+                    font-size: $mediumFontSize;
+                }
+                p{
+                    font-size: $xsFontSize;
+                }
+            }
+            .workDetail1{
+                line-height:1vh;
+                font-size: $xsFontSize;
+            }
+        }
+        .workImg{
+            img{
+                width: 100%;
+            }
+            .workOtherImgs{
+                div{
+                    padding-top:2%;
+                }
+                div:nth-child(1){
+                    padding-right: 1%;
+                }
+                div:nth-child(2){
+                    padding-left: 1%;
+                }
+            }
+        }
+        .workDetail2{
+            padding-top:3%;
+            line-height:1vh;
+            font-size: $xsFontSize;
+        }
+    }
 }
 @media (max-width : 1200px) {
     #homeBanner{
+        background-image: url('../images/home_banner_2.jpg');
         h2{
+            top:64%;
             line-height: 5vw;
         }
     }
