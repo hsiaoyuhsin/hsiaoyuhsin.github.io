@@ -34,23 +34,29 @@
   color: #444444;
   font-size: 1rem;
   margin: 1vw;
+  margin-top: 0;
 }
 .mainNav li a:hover {
   color: #000000;
 }
 .mainNav #workMobile {
-  display: none;
+  display: none !important;
   width: 120px;
 }
 .mainNav #workMobile a {
   font-weight: 300;
-  margin-top: 1vw;
+  margin: 1vw;
+  margin-top: 0;
   margin-right: 0;
   width: 80px;
+  border-radius: 0;
 }
 .mainNav #workMobile .dropdown-toggle {
+  width: 10px;
   margin: 1vw;
+  margin-top: 0;
   margin-left: 0;
+  border-radius: 0;
 }
 .mainNav #workMobile .dropdown-menu {
   width: 210px;
@@ -59,6 +65,7 @@
   position: relative;
   top: 60%;
   transform: translateY(-50%);
+  font-weight: 300;
 }
 .mainNav .active {
   border-bottom: 2px solid #D6D5D5;
@@ -247,7 +254,7 @@ footer p {
   }
 
   .mainNav #workMobile {
-    display: inline;
+    display: flex !important;
   }
   .mainNav #workWeb {
     display: none;
