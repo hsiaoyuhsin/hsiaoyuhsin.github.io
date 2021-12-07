@@ -42,7 +42,7 @@
 }
 .mainNav #workMobile {
   display: none !important;
-  width: 120px;
+  width: 100px;
 }
 .mainNav #workMobile a, .mainNav #workMobile .dropdown-toggle {
   font-weight: 300;
@@ -55,7 +55,8 @@
   width: 80px;
 }
 .mainNav #workMobile .dropdown-toggle {
-  width: 10px;
+  width: 5px;
+  padding: 0;
   margin-left: 0;
 }
 .mainNav #workMobile .dropdown-menu {
@@ -89,6 +90,7 @@
   display: none;
   font-size: 1rem;
   font-weight: 400;
+  padding-top: 2%;
 }
 
 #homeBanner {
