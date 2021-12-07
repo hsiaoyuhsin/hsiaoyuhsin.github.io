@@ -45,7 +45,7 @@ $cardHeightSm: 300px;
     li{
         position:relative;
         top:60%;
-        transform: translateY(-40%);
+        transform: translateY(-50%);
         height: 48px;
         a{
             color: $grayColor;
@@ -68,9 +68,11 @@ $cardHeightSm: 300px;
         }
         .dropdown-menu{
             width:210px;
+            // padding-top:3%;
             .dropdown-item{
+                font-size: $xsFontSize;
                 position:relative;
-                top:60%;
+                top:70%;
                 transform: translateY(-50%);
                 font-weight: 300;
             }
@@ -97,6 +99,7 @@ $cardHeightSm: 300px;
     #workMobileTitle{
         display:none;
         font-size: $smallFontSize;
+        color: $grayColor;
         font-weight: 400;
         margin-top:5%;
         padding:2%
