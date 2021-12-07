@@ -61,6 +61,10 @@ $cardHeightSm: 300px;
         display: none !important;
         a{
             font-weight: 300;
+            color: $grayColor;
+            border-radius:0;
+            margin: 1vw;
+            margin-top:0;
         }
         .dropdown-menu{
             width:210px;
