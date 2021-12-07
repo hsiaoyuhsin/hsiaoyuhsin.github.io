@@ -50,25 +50,29 @@ $cardHeightSm: 300px;
             color: $grayColor;
             font-size: $smallFontSize;
             margin: 1vw;
-            // margin-top:0;
+            margin-top:0;
         }
         a:hover{
             color: $blackColor;
         }
     }
     #workMobile{
-        display:none;
+        display: none !important;
         width:120px;
         a{
             font-weight: 300;
-            // margin: 1vw;
-            margin-top:1vw;
+            margin: 1vw;
+            margin-top:0;
             margin-right: 0;
             width:80px;
+            border-radius: 0;
         }
         .dropdown-toggle{
+            width:10px;
             margin: 1vw;
+            margin-top:0;
             margin-left: 0;
+            border-radius: 0;
         }
         .dropdown-menu{
             width:210px;
@@ -76,6 +80,7 @@ $cardHeightSm: 300px;
                 position:relative;
                 top:60%;
                 transform: translateY(-50%);
+                font-weight: 300;
             }
         }
     }
@@ -286,7 +291,7 @@ footer{
     }
     .mainNav{
         #workMobile{
-            display:inline;
+            display:flex !important;
         }
         #workWeb{
             display:none;
