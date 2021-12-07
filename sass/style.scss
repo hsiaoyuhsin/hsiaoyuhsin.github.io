@@ -59,21 +59,8 @@ $cardHeightSm: 300px;
     }
     #workMobile{
         display: none !important;
-        width:110px;
-        a, .dropdown-toggle{
-            font-weight: 300;
-            margin: 1vw;
-            margin-top:0;
-            border-radius: 0;
-        }
         a{
-            padding-right:0;
-            margin-right: 0;
-            width:80px;  
-        }
-        .dropdown-toggle{
-            padding: 0;
-            margin-left: 0;
+            font-weight: 300;
         }
         .dropdown-menu{
             width:210px;
@@ -107,7 +94,8 @@ $cardHeightSm: 300px;
         display:none;
         font-size: $smallFontSize;
         font-weight: 400;
-        padding-top:2%;
+        margin-top:5%;
+        padding:2%
     }
 }
 
