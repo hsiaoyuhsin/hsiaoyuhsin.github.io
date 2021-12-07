@@ -34,10 +34,11 @@ $cardHeightSm: 300px;
 
 .contents{
     width:100%;
-    padding-top: 12vh
+    padding-top: 13vh
 }
 
 .mainNav{
+    padding-top: 0;
     height:10vh;
     position: fixed;
     background-color:#fff;
@@ -59,20 +60,19 @@ $cardHeightSm: 300px;
     #workMobile{
         display: none !important;
         width:120px;
-        a{
+        a, .dropdown-toggle{
             font-weight: 300;
             margin: 1vw;
             margin-top:0;
-            margin-right: 0;
-            width:80px;
             border-radius: 0;
+        }
+        a{
+            margin-right: 0;
+            width:80px;  
         }
         .dropdown-toggle{
             width:10px;
-            margin: 1vw;
-            margin-top:0;
             margin-left: 0;
-            border-radius: 0;
         }
         .dropdown-menu{
             width:210px;
@@ -104,7 +104,8 @@ $cardHeightSm: 300px;
     }
     #workMobileTitle{
         display:none;
-        font-size: $mediumFontSize;
+        font-size: $smallFontSize;
+        font-weight: 400;
     }
 }
 
