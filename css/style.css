@@ -45,6 +45,10 @@
 }
 .mainNav #workMobile a {
   font-weight: 300;
+  color: #444444;
+  border-radius: 0;
+  margin: 1vw;
+  margin-top: 0;
 }
 .mainNav #workMobile .dropdown-menu {
   width: 210px;
