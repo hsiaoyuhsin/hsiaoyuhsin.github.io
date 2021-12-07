@@ -16,10 +16,11 @@
 
 .contents {
   width: 100%;
-  padding-top: 12vh;
+  padding-top: 13vh;
 }
 
 .mainNav {
+  padding-top: 0;
   height: 10vh;
   position: fixed;
   background-color: #fff;
@@ -43,20 +44,19 @@
   display: none !important;
   width: 120px;
 }
-.mainNav #workMobile a {
+.mainNav #workMobile a, .mainNav #workMobile .dropdown-toggle {
   font-weight: 300;
   margin: 1vw;
   margin-top: 0;
+  border-radius: 0;
+}
+.mainNav #workMobile a {
   margin-right: 0;
   width: 80px;
-  border-radius: 0;
 }
 .mainNav #workMobile .dropdown-toggle {
   width: 10px;
-  margin: 1vw;
-  margin-top: 0;
   margin-left: 0;
-  border-radius: 0;
 }
 .mainNav #workMobile .dropdown-menu {
   width: 210px;
@@ -87,7 +87,8 @@
 }
 .secNav #workMobileTitle {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 #homeBanner {
