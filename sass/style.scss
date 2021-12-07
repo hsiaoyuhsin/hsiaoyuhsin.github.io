@@ -45,17 +45,41 @@ $cardHeightSm: 300px;
         position:relative;
         top:60%;
         transform: translateY(-40%);
-
+        height: 48px;
         a{
             color: $grayColor;
             font-size: $smallFontSize;
             margin: 1vw;
-            margin-top:0;
+            // margin-top:0;
         }
         a:hover{
             color: $blackColor;
         }
     }
+    #workMobile{
+        display:none;
+        width:120px;
+        a{
+            font-weight: 300;
+            // margin: 1vw;
+            margin-top:1vw;
+            margin-right: 0;
+            width:80px;
+        }
+        .dropdown-toggle{
+            margin: 1vw;
+            margin-left: 0;
+        }
+        .dropdown-menu{
+            width:210px;
+            .dropdown-item{
+                position:relative;
+                top:60%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    
     .active{
         border-bottom: 2px solid $lightGrayColor;
     }
@@ -72,6 +96,10 @@ $cardHeightSm: 300px;
     }
     .active{
         font-weight:500;
+    }
+    #workMobileTitle{
+        display:none;
+        font-size: $mediumFontSize;
     }
 }
 
@@ -256,6 +284,22 @@ footer{
     *{
         letter-spacing: 1px;
     }
+    .mainNav{
+        #workMobile{
+            display:inline;
+        }
+        #workWeb{
+            display:none;
+        }
+    }
+    .secNav{
+        #workMobileTitle{
+            display:inline;
+        }
+        li{
+            display:none;
+        }
+    }
     #homeBanner{
         background-image: url('../images/home_banner_2.jpg');
         h1{
@@ -281,6 +325,7 @@ footer{
         }
     }
     #homeCards{
+        // padding-top:12vh;
         .card{
             width: $cardWidthSm;
             // height: $cardHeightSm;

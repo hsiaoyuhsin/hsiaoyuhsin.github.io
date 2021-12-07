@@ -28,15 +28,37 @@
   position: relative;
   top: 60%;
   transform: translateY(-40%);
+  height: 48px;
 }
 .mainNav li a {
   color: #444444;
   font-size: 1rem;
   margin: 1vw;
-  margin-top: 0;
 }
 .mainNav li a:hover {
   color: #000000;
+}
+.mainNav #workMobile {
+  display: none;
+  width: 120px;
+}
+.mainNav #workMobile a {
+  font-weight: 300;
+  margin-top: 1vw;
+  margin-right: 0;
+  width: 80px;
+}
+.mainNav #workMobile .dropdown-toggle {
+  margin: 1vw;
+  margin-left: 0;
+}
+.mainNav #workMobile .dropdown-menu {
+  width: 210px;
+}
+.mainNav #workMobile .dropdown-menu .dropdown-item {
+  position: relative;
+  top: 60%;
+  transform: translateY(-50%);
 }
 .mainNav .active {
   border-bottom: 2px solid #D6D5D5;
@@ -55,6 +77,10 @@
 }
 .secNav .active {
   font-weight: 500;
+}
+.secNav #workMobileTitle {
+  display: none;
+  font-size: 1.5rem;
 }
 
 #homeBanner {
@@ -218,6 +244,20 @@ footer p {
 @media (max-width: 767px) {
   * {
     letter-spacing: 1px;
+  }
+
+  .mainNav #workMobile {
+    display: inline;
+  }
+  .mainNav #workWeb {
+    display: none;
+  }
+
+  .secNav #workMobileTitle {
+    display: inline;
+  }
+  .secNav li {
+    display: none;
   }
 
   #homeBanner {
