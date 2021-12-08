@@ -268,6 +268,15 @@ $cardHeightSm: 300px;
             div:nth-child(2){
                 padding-left: .4%;
             }
+            div:nth-child(3){
+                padding-right: .4%;
+            }
+            div:nth-child(4){
+                padding-left: .4%;
+            }
+        }
+        #eggs_img{
+            padding-right: .4%;
         }
     }
     .workDetail2{
@@ -359,7 +368,7 @@ footer{
             }
             p{
                 padding-left: 4vw;
-                font-size: $xsFontSize;
+                font-size: $xxsFontSize;
                 line-height:3vh;
             }
         }
