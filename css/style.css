@@ -222,6 +222,9 @@
 .workContent .workImg img {
   width: 100%;
 }
+.workContent .workImg p {
+  font-size: 0.8rem;
+}
 .workContent .workImg .workOtherImgs div {
   padding-top: 0.8%;
 }
@@ -331,7 +334,7 @@ footer p {
   }
   .workContent .workDetail2 {
     padding-top: 5%;
-    line-height: 1vh;
+    line-height: 2vh;
     font-size: 0.7rem;
   }
 }

@@ -255,6 +255,9 @@ $cardHeightSm: 300px;
         img{
             width: 100%;
         }
+        p{
+            font-size: $xsFontSize;
+        }
         .workOtherImgs{
             div{
                 padding-top:.8%;
@@ -383,7 +386,7 @@ footer{
         }
         .workDetail2{
             padding-top:5%;
-            line-height:1vh;
+            line-height:2vh;
             font-size: $xxsFontSize;
         }
     }
